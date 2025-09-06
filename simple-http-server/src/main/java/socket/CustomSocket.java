@@ -30,10 +30,12 @@ public class CustomSocket {
             String inputData = scanner.nextLine();
             if (SHORT_YES.equals(inputData)) {
                 this.PATH_TO_RESOURCES = PATH_STATIC_FOLDER;
+                System.out.println("The default path to resources is selected");
                 return;
             }
             System.out.println("Input path to resources:"); // D:/PabloPackage/java_project/payment-service/simple-http-server/src/main/resources/static/customPath
             this.PATH_TO_RESOURCES = scanner.nextLine();
+            System.out.printf("The path to resources: %s\n", this.PATH_TO_RESOURCES);
         }
     }
 
