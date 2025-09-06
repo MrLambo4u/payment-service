@@ -1,0 +1,10 @@
+Default path:
+    success:
+        http://localhost:8080/customPath/custom.html
+        http://localhost:8080/index.html
+        http://localhost:8080/style.css
+        http://localhost:8080/picture.png
+        http://localhost:8080/script.js
+    error404:
+        http://localhost:8080/any.html
+        http://localhost:8080/index.htmlll
