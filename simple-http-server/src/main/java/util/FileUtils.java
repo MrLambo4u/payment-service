@@ -7,14 +7,13 @@ import java.nio.file.Path;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static java.nio.file.Files.readAllBytes;
-import static java.util.Objects.isNull;
 import static util.Constant.ContentType.FILE_TYPE_TO_CONTENT_TYPE_MAP;
 import static util.Constant.Symbols.DOT;
 
 public class FileUtils {
     public static String getFileContentType(File file) {
         String contentType = FILE_TYPE_TO_CONTENT_TYPE_MAP.get(file.getName().split(DOT)[1]);
-        if (isNull(contentType)) {
+        if (contentType == null) {
             throw new UnsupportedAddressTypeException();
         }
         return contentType;
