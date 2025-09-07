@@ -7,4 +7,7 @@ Default path:
         http://localhost:8080/script.js
     error404:
         http://localhost:8080/any.html
+    error400:
         http://localhost:8080/index.htmlll
+    error500
+        http://localhost:8080/index

@@ -8,7 +8,6 @@ import java.util.Set;
 public interface Constant {
     int DEFAULT_PORT = 8080;
     String PATH_STATIC_FOLDER = new File("").getAbsolutePath().concat("/simple-http-server/src/main/resources/static");
-    String HTTP_404_ERROR_RESPONSE = "HTTP/1.1 404 Not found";
 
     interface Symbols {
         String SPACE = " ";
